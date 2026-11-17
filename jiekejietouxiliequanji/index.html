@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>捷克街头系列全集-拍摄路线与作品整理</title>
+<meta name="description" content="捷克街头系列全集按拍摄城市与年份整理，收录布拉格、布尔诺、克鲁姆洛夫等地的街头影像作品，附器材、光线与路线笔记，帮你看懂这一系列的城市脉络与观看顺序。">
+<meta name="keywords" content="捷克街头系列全集">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4d3f'/%3E%3Cpath d='M14 46V22l10 8 8-12 8 12 10-8v24' fill='none' stroke='%23e8c56a' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --green:#1f4d3f;
+  --green-deep:#15362d;
+  --green-soft:#e6efe9;
+  --gold:#c9a24a;
+  --gold-soft:#f6ecd4;
+  --ink:#232a26;
+  --ink-2:#4c5a53;
+  --ink-3:#7b8a82;
+  --line:#d9e2dc;
+  --bg:#f7f8f5;
+  --card:#ffffff;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 2px rgba(31,77,63,.08);
+  --shadow-m:0 6px 20px rgba(31,77,63,.10);
+  --font:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,serif;
+  --font-sans:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --space-1:6px;
+  --space-2:12px;
+  --space-3:18px;
+  --space-4:28px;
+  --space-5:44px;
+  --space-6:64px;
+  --stick-h:96px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--green);text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.35;color:var(--green-deep);margin:0 0 var(--space-2);}
+p{margin:0 0 var(--space-3);}
+ul,ol{margin:0 0 var(--space-3);padding-left:1.25em;}
+li{margin-bottom:6px;}
+section[id]{scroll-margin-top:calc(var(--stick-h) + 14px);}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+
+/* ===== 吸顶公告+页头 ===== */
+.stick-wrap{
+  position:sticky;top:0;z-index:80;
+  background:var(--bg);
+  box-shadow:0 1px 0 var(--line);
+}
+.notice-bar{
+  background:var(--green-deep);
+  color:#e9e2ce;
+  font-size:13.5px;
+  letter-spacing:.02em;
+}
+.notice-bar .wrap{
+  display:flex;align-items:center;gap:10px;
+  padding-top:7px;padding-bottom:7px;
+  flex-wrap:wrap;
+}
+.notice-bar .tag{
+  background:var(--gold);color:var(--green-deep);
+  border-radius:3px;padding:1px 7px;font-weight:700;font-size:12px;
+}
+.notice-bar a{color:#f3e7c6;text-decoration:underline;text-underline-offset:2px;}
+.notice-bar .sep{opacity:.5;}
+
+header.site-head{
+  background:rgba(247,248,245,.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.head-row{
+  display:flex;align-items:center;gap:var(--space-4);
+  padding:12px 0;
+  flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.brand .mark{width:40px;height:40px;flex-shrink:0;}
+.brand .name{
+  font-family:var(--font);font-size:20px;font-weight:700;
+  color:var(--green-deep);letter-spacing:.02em;line-height:1.2;
+}
+.brand .sub{display:block;font-family:var(--font-sans);font-size:11px;color:var(--ink-3);letter-spacing:.16em;font-weight:400;}
+nav.main-nav{margin-left:auto;}
+.nav-toggle{
+  display:none;
+  border:1px solid var(--green);background:transparent;color:var(--green);
+  border-radius:var(--radius-s);padding:8px 12px;font-size:14px;font-family:var(--font-sans);
+  cursor:pointer;
+}
+.nav-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+.nav-list{
+  display:flex;gap:2px;list-style:none;margin:0;padding:0;flex-wrap:wrap;
+}
+.nav-list a{
+  display:block;padding:8px 12px;border-radius:var(--radius-s);
+  color:var(--ink-2);font-size:14.5px;
+}
+.nav-list a:hover{background:var(--green-soft);color:var(--green-deep);text-decoration:none;}
+.nav-list a:focus-visible{outline:2px solid var(--gold);outline-offset:1px;}
+.head-tools{display:flex;align-items:center;gap:10px;}
+.search-box{position:relative;display:flex;align-items:center;}
+.search-box input{
+  width:190px;border:1px solid var(--line);background:#fff;
+  border-radius:999px;padding:8px 14px;font-size:14px;font-family:var(--font-sans);
+  color:var(--ink);
+}
+.search-box input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold);}
+.search-result{
+  position:absolute;top:calc(100% + 8px);right:0;width:300px;max-width:80vw;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);
+  box-shadow:var(--shadow-m);padding:8px;font-size:14px;display:none;z-index:90;
+}
+.search-result.show{display:block;}
+.search-result ul{list-style:none;margin:0;padding:0;max-height:260px;overflow:auto;}
+.search-result li a{display:block;padding:7px 10px;border-radius:var(--radius-s);color:var(--ink);}
+.search-result li a:hover{background:var(--green-soft);text-decoration:none;}
+.search-result .none{padding:10px;color:var(--ink-3);}
+.btn{
+  display:inline-block;border:1px solid var(--green);color:var(--green);
+  border-radius:999px;padding:8px 18px;font-size:14.5px;background:transparent;cursor:pointer;
+  font-family:var(--font-sans);transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{background:var(--green-soft);text-decoration:none;transform:translateY(-2px);}
+.btn.solid{background:var(--green);color:#fff;}
+.btn.solid:hover{background:var(--green-deep);}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:var(--green-deep);}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(700px 320px at 88% -10%,rgba(201,162,74,.18),transparent 70%),
+    linear-gradient(180deg,#f2f5f0 0%,#f7f8f5 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-5);
+  align-items:center;padding-top:var(--space-5);padding-bottom:var(--space-5);
+  position:relative;
+}
+.hero-copy{position:relative;z-index:2;}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:.14em;color:var(--green);
+  border:1px solid rgba(31,77,63,.28);border-radius:999px;
+  padding:4px 14px;background:rgba(255,255,255,.6);
+  margin-bottom:var(--space-3);
+}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);}
+.hero h1{
+  font-size:clamp(30px,4.4vw,46px);
+  letter-spacing:.01em;margin-bottom:var(--space-3);
+  border-left:6px solid var(--gold);padding-left:18px;
+}
+.hero-lead{font-size:17px;color:var(--ink-2);max-width:34em;}
+.hero-lead strong{color:var(--green-deep);}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--space-3);}
+.hero-stats{
+  display:flex;gap:var(--space-4);margin-top:var(--space-4);flex-wrap:wrap;
+  border-top:1px dashed var(--line);padding-top:var(--space-3);
+}
+.hero-stats div{min-width:96px;}
+.hero-stats b{display:block;font-family:var(--font);font-size:24px;color:var(--green-deep);}
+.hero-stats span{font-size:12.5px;color:var(--ink-3);letter-spacing:.06em;}
+.hero-art{position:relative;z-index:1;}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 26px rgba(31,77,63,.16));}
+
+/* ===== 主体布局 ===== */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 296px;
+  gap:var(--space-5);align-items:start;
+  padding-top:var(--space-5);padding-bottom:var(--space-5);
+}
+.main-col{min-width:0;}
+.side-col{min-width:0;position:sticky;top:calc(var(--stick-h) + 16px);}
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-3);margin-bottom:var(--space-3);box-shadow:var(--shadow-s);
+}
+.side-card h3{font-size:15.5px;letter-spacing:.05em;border-bottom:2px solid var(--gold-soft);padding-bottom:6px;}
+.side-nav{list-style:none;margin:0;padding:0;font-size:14.5px;}
+.side-nav li{margin:0;}
+.side-nav a{
+  display:block;padding:6px 10px;border-radius:var(--radius-s);
+  color:var(--ink-2);border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--green-soft);text-decoration:none;}
+.side-nav a.active{border-left-color:var(--gold);background:var(--green-soft);color:var(--green-deep);font-weight:600;}
+
+/* 板块通用 */
+.panel{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius-l);padding:var(--space-4);
+  margin-bottom:var(--space-4);box-shadow:var(--shadow-s);
+}
+.panel > h2{
+  font-size:23px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+}
+.panel > h2 .no{
+  font-family:var(--font-sans);font-size:12px;letter-spacing:.1em;
+  color:var(--green);background:var(--green-soft);
+  border-radius:4px;padding:2px 8px;font-weight:600;
+}
+.panel > h2 + .sub{color:var(--ink-3);font-size:14px;margin-top:-6px;margin-bottom:var(--space-3);}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:var(--space-3);}
+.sec-head h2{margin:0;}
+.sec-head a{font-size:13.5px;color:var(--green);}
+.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:var(--space-2);}
+.tag{
+  display:inline-block;font-size:13px;padding:3px 11px;border-radius:999px;
+  background:var(--green-soft);color:var(--green-deep);border:1px solid #cfe0d6;
+}
+.tag.gold{background:var(--gold-soft);border-color:#e6d3a2;color:#7a5c17;}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);}
+.ov-item{
+  border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-3);background:linear-gradient(180deg,#fbfcfa,#fff);
+}
+.ov-item b{display:block;font-family:var(--font);font-size:16px;color:var(--green-deep);margin-bottom:4px;}
+.ov-item p{font-size:14px;color:var(--ink-2);margin:0;}
+
+/* 精选卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;
+  background:#fff;display:flex;flex-direction:column;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);}
+.card .thumb{aspect-ratio:16/10;width:100%;object-fit:cover;background:#e8ece8;}
+.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:6px;flex:1;}
+.card h3{font-size:16px;margin:0;}
+.card p{font-size:13.5px;color:var(--ink-2);margin:0;flex:1;}
+.card .meta{font-size:12.5px;color:var(--ink-3);letter-spacing:.03em;}
+
+/* 紧凑列表 */
+.zip-list{list-style:none;margin:0;padding:0;}
+.zip-list li{
+  display:grid;grid-template-columns:78px 1fr auto;gap:12px;align-items:baseline;
+  padding:11px 4px;border-bottom:1px dashed var(--line);
+}
+.zip-list li:last-child{border-bottom:0;}
+.zip-list time{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.zip-list .t{font-size:15px;color:var(--ink);}
+.zip-list .t:hover{color:var(--green);}
+.zip-list .m{font-size:12.5px;color:var(--ink-3);white-space:nowrap;}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.cat-grid a{
+  display:block;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:11px 12px;background:#fbfcfa;color:var(--ink);font-size:14.5px;
+  transition:background .15s ease,transform .15s ease;
+}
+.cat-grid a:hover{background:var(--green-soft);text-decoration:none;transform:translateY(-2px);}
+.cat-grid small{display:block;color:var(--ink-3);font-size:12px;}
+
+/* 深度解析 */
+.deep{
+  background:linear-gradient(180deg,#fbfaf5,#fff);
+  border:1px solid #e7ddc2;
+}
+.deep h3{
+  font-size:17.5px;margin-top:var(--space-4);padding-left:12px;
+  border-left:4px solid var(--gold);
+}
+.deep h3:first-of-type{margin-top:0;}
+.deep p{font-size:15.5px;color:var(--ink-2);}
+.deep .quote{
+  border-left:4px solid var(--green);background:var(--green-soft);
+  padding:var(--space-3) var(--space-3);border-radius:0 var(--radius-m) var(--radius-m) 0;
+  font-family:var(--font);font-size:16px;color:var(--green-deep);margin:var(--space-3) 0;
+}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;margin:var(--space-2) 0 var(--space-3);}
+.data-table th,.data-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.data-table th{background:var(--green-soft);color:var(--green-deep);font-weight:600;}
+.data-table td.num{font-variant-numeric:tabular-nums;}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+.steps li{
+  position:relative;padding:0 0 var(--space-3) 46px;counter-increment:step;
+  border-left:2px dashed #cfe0d6;margin-left:14px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0;}
+.steps li::before{
+  content:counter(step);position:absolute;left:-16px;top:0;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--green);color:#fff;font-size:14px;font-family:var(--font-sans);
+  display:flex;align-items:center;justify-content:center;font-weight:700;
+}
+.steps b{display:block;color:var(--green-deep);font-family:var(--font);font-size:15.5px;}
+.steps p{font-size:14px;color:var(--ink-2);margin:2px 0 0;}
+
+/* FAQ */
+details.faq{
+  border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:0;margin-bottom:10px;background:#fbfcfa;
+}
+details.faq summary{
+  cursor:pointer;padding:13px 42px 13px 15px;font-size:15px;color:var(--green-deep);
+  font-weight:600;position:relative;list-style:none;
+}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  color:var(--gold);font-size:20px;font-weight:400;line-height:1;
+}
+details.faq[open] summary::after{content:"–";}
+details.faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:var(--radius-m);}
+details.faq .ans{padding:0 16px 14px;font-size:14.5px;color:var(--ink-2);}
+details.faq .ans p:last-child{margin-bottom:0;}
+
+/* 评论 */
+.comment-list{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-3);}
+.comment{
+  display:grid;grid-template-columns:44px 1fr;gap:12px;
+  border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--space-3);
+  background:#fff;
+}
+.avatar{
+  width:44px;height:44px;border-radius:50%;background:var(--green-soft);
+  color:var(--green-deep);display:flex;align-items:center;justify-content:center;
+  font-family:var(--font);font-size:17px;font-weight:700;
+}
+.comment .who{font-size:13px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;}
+.comment .who b{color:var(--green-deep);font-size:14px;}
+.comment p{font-size:14.5px;margin:6px 0 0;color:var(--ink-2);}
+.comment .ref{font-size:12.5px;color:var(--ink-3);margin-top:6px;}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);}
+.news-item{
+  border-left:3px solid var(--gold);background:#fbfcfa;
+  padding:12px 14px;border-radius:0 var(--radius-s) var(--radius-s) 0;
+}
+.news-item time{font-size:12.5px;color:var(--ink-3);}
+.news-item b{display:block;font-family:var(--font);font-size:15px;color:var(--green-deep);margin:2px 0 4px;}
+.news-item p{font-size:13.5px;color:var(--ink-2);margin:0;}
+
+/* 榜单 */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rank;}
+.rank-list li{
+  counter-increment:rank;display:grid;grid-template-columns:36px 1fr auto;
+  gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line);
+}
+.rank-list li:last-child{border-bottom:0;}
+.rank-list li::before{
+  content:counter(rank);font-family:var(--font);font-size:18px;color:var(--gold);
+  font-weight:700;text-align:center;
+}
+.rank-list .rl-t{font-size:15px;}
+.rank-list .rl-n{font-size:13px;color:var(--ink-3);}
+
+/* 引语证言 */
+.voices{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);}
+.voice{
+  background:var(--green-deep);color:#e6ecdf;border-radius:var(--radius-m);
+  padding:var(--space-3);position:relative;
+}
+.voice p{font-family:var(--font);font-size:15px;margin:0 0 10px;color:#f2f5ec;}
+.voice span{font-size:12.5px;color:#b9c8ba;letter-spacing:.05em;}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0;position:relative;}
+.timeline::before{content:"";position:absolute;left:8px;top:4px;bottom:4px;width:2px;background:var(--line);}
+.timeline li{position:relative;padding-left:30px;margin-bottom:var(--space-3);}
+.timeline li:last-child{margin-bottom:0;}
+.timeline li::before{
+  content:"";position:absolute;left:2px;top:7px;width:14px;height:14px;
+  border-radius:50%;background:#fff;border:3px solid var(--gold);
+}
+.timeline b{display:block;font-family:var(--font);font-size:15px;color:var(--green-deep);}
+.timeline time{font-size:12.5px;color:var(--ink-3);display:block;margin-bottom:2px;}
+.timeline p{font-size:14px;color:var(--ink-2);margin:0;}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.rec-tags a{
+  display:inline-block;padding:7px 14px;font-size:14px;
+  border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink-2);
+}
+.rec-tags a:hover{border-color:var(--green);color:var(--green-deep);text-decoration:none;background:var(--green-soft);}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:22px;bottom:26px;z-index:70;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--green);color:#fff;border:none;cursor:pointer;
+  font-size:18px;box-shadow:var(--shadow-m);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+.to-top:focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+
+/* 页脚 */
+footer.site-foot{
+  background:var(--green-deep);color:#cdd8cf;margin-top:var(--space-5);
+  padding:var(--space-5) 0 var(--space-3);
+  font-size:14px;
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--space-4);}
+footer.site-foot h4{color:#f3ecd8;font-size:15px;margin-bottom:10px;letter-spacing:.06em;}
+footer.site-foot .brand .name{color:#fff;}
+footer.site-foot .brand .sub{color:#9fb2a4;}
+footer.site-foot p{color:#aabcb0;font-size:13.5px;line-height:1.8;}
+footer.site-foot ul{list-style:none;padding:0;margin:0;font-size:13.5px;}
+footer.site-foot li{margin-bottom:6px;}
+footer.site-foot a{color:#cdd8cf;}
+footer.site-foot a:hover{color:#f3ecd8;}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.12);margin-top:var(--space-4);
+  padding-top:var(--space-3);font-size:12.5px;color:#8fa295;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;}
+  .side-col{position:static;order:2;}
+  .main-col{order:1;}
+  .hero .wrap{grid-template-columns:1fr;}
+  .hero-art{order:-1;max-width:420px;margin:0 auto;}
+  .overview-grid{grid-template-columns:repeat(2,1fr);}
+  .card-grid{grid-template-columns:repeat(2,1fr);}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  :root{--stick-h:104px;}
+  .head-row{gap:10px;padding:10px 0;}
+  nav.main-nav{margin-left:0;width:100%;order:4;}
+  .nav-toggle{display:inline-block;margin-left:auto;}
+  .nav-list{display:none;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:var(--radius-m);padding:6px;background:#fff;}
+  .nav-list.open{display:flex;}
+  .nav-list a{padding:10px 12px;font-size:15px;}
+  .head-tools{order:3;width:100%;}
+  .search-box{width:100%;}
+  .search-box input{width:100%;}
+  .search-result{width:100%;left:0;right:auto;}
+  .hero-actions .btn{flex:1;text-align:center;}
+  .hero h1{font-size:29px;padding-left:12px;border-left-width:4px;}
+  .panel{padding:var(--space-3);border-radius:var(--radius-m);}
+  .overview-grid{grid-template-columns:1fr;}
+  .card-grid{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .news-grid{grid-template-columns:1fr;}
+  .voices{grid-template-columns:1fr;}
+  .zip-list li{grid-template-columns:1fr auto;gap:4px 10px;}
+  .zip-list time{grid-column:1;}
+  .zip-list .t{grid-column:1 / -1;}
+  .zip-list .m{grid-column:2;grid-row:1;}
+  .foot-grid{grid-template-columns:1fr;}
+  .to-top{right:14px;bottom:16px;width:42px;height:42px;}
+  .notice-bar{font-size:12.5px;}
+}
+@media (max-width:400px){
+  .wrap{padding:0 14px;}
+  .cat-grid{grid-template-columns:1fr 1fr;}
+  .hero-stats{gap:var(--space-3);}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+  .card:hover{transform:none;}
+  .btn:hover{transform:none;}
+  .cat-grid a:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-wrap">
+  <div class="notice-bar" role="region" aria-label="站内更新公告">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span>2026-11-06 增补《克鲁姆洛夫老城台阶与拱廊》路线笔记，并补入布尔诺站 2025 年秋冬三集的分集表</span>
+      <span class="sep">|</span>
+      <a href="/#latest">查看最新条目</a>
+    </div>
+  </div>
+
+  <header class="site-head">
+    <div class="wrap head-row">
+      <a class="brand" href="/#top" aria-label="捷克街头系列全集 首页">
+        <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="双拱门与街道标志">
+          <rect width="48" height="48" rx="10" fill="#1f4d3f"/>
+          <path d="M10 38V20l7 6 7-10 7 10 7-6v18" fill="none" stroke="#e8c56a" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="24" cy="34" r="2.6" fill="#e8c56a"/>
+        </svg>
+        <span>
+          <span class="name">捷克街头系列全集</span>
+          <span class="sub">CZECH STREET · FULL COLLECTION</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主题导航">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="navToggle">栏目菜单</button>
+        <ul class="nav-list" id="primary-nav">
+          <li><a href="/#overview">系列概览</a></li>
+          <li><a href="/#picks">精选镜头</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#categories">城市分类</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </nav>
+
+      <div class="head-tools">
+        <div class="search-box">
+          <input type="search" id="siteSearch" placeholder="搜城市、年份、器材…" aria-label="站内搜索条目" autocomplete="off">
+          <div class="search-result" id="searchResult" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="主题首屏">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="kicker">布拉格 · 布尔诺 · 克鲁姆洛夫 · 俄斯特拉发</span>
+        <h1>捷克街头系列全集</h1>
+        <p class="hero-lead">把镜头架在伏尔塔瓦河东岸的旧城巷口，从清晨六点的面包房推车一直拍到查理大桥夜间换岗。这一系列以<strong>城市街区为章节</strong>，按年份、器材与光线条件整理，收录 2019 年至 2026 年间公开的 7 座城市、46 个拍摄点位。</p>
+        <div class="hero-actions">
+          <a class="btn solid" href="/#picks">从精选镜头开始</a>
+          <a class="btn" href="/#guide">按路线查看</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>7</b><span>覆盖城市</span></div>
+          <div><b>46</b><span>拍摄点位</span></div>
+          <div><b>112</b><span>已整理片段</span></div>
+          <div><b>2019—2026</b><span>时间跨度</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 520 420" role="img" aria-label="旧城巷口、拱廊与电车的原创插画">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#dfe7dc"/>
+              <stop offset="1" stop-color="#f7f8f5"/>
+            </linearGradient>
+            <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#cfd8cf"/>
+              <stop offset="1" stop-color="#aebcae"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="520" height="420" rx="22" fill="url(#sky)"/>
+          <circle cx="420" cy="78" r="34" fill="#e8c56a" opacity=".85"/>
+          <!-- 左侧建筑 -->
+          <g fill="#1f4d3f">
+            <rect x="26" y="120" width="96" height="240" rx="6" opacity=".92"/>
+            <rect x="122" y="158" width="70" height="202" rx="6" opacity=".78"/>
+            <rect x="330" y="140" width="82" height="220" rx="6" opacity=".9"/>
+            <rect x="408" y="176" width="86" height="184" rx="6" opacity=".74"/>
+          </g>
+          <!-- 窗户 -->
+          <g fill="#f3ecd8" opacity=".9">
+            <rect x="42" y="146" width="18" height="26" rx="3"/>
+            <rect x="74" y="146" width="18" height="26" rx="3"/>
+            <rect x="42" y="196" width="18" height="26" rx="3"/>
+            <rect x="74" y="196" width="18" height="26" rx="3"/>
+            <rect x="42" y="246" width="18" height="26" rx="3"/>
+            <rect x="74" y="246" width="18" height="26" rx="3"/>
+            <rect x="136" y="180" width="16" height="22" rx="3"/>
+            <rect x="160" y="180" width="16" height="22" rx="3"/>
+            <rect x="136" y="224" width="16" height="22" rx="3"/>
+            <rect x="160" y="224" width="16" height="22" rx="3"/>
+            <rect x="346" y="164" width="18" height="24" rx="3"/>
+            <rect x="378" y="164" width="18" height="24" rx="3"/>
+            <rect x="346" y="210" width="18" height="24" rx="3"/>
+            <rect x="378" y="210" width="18" height="24" rx="3"/>
+            <rect x="424" y="200" width="16" height="22" rx="3"/>
+            <rect x="452" y="200" width="16" height="22" rx="3"/>
+            <rect x="424" y="244" width="16" height="22" rx="3"/>
+            <rect x="452" y="244" width="16" height="22" rx="3"/>
+          </g>
+          <!-- 拱廊 -->
+          <path d="M196 360V242c0-30 22-52 50-52s50 22 50 52v118z" fill="#fff" opacity=".85"/>
+          <path d="M206 360V244c0-24 18-44 40-44s40 20 40 44v116z" fill="#1f4d3f" opacity=".25"/>
+          <!-- 路面 -->
+          <path d="M0 360h520v60H0z" fill="url(#road)"/>
+          <g stroke="#f7f8f5" stroke-width="4" stroke-linecap="round" opacity=".8">
+            <path d="M40 392h34"/>
+            <path d="M120 392h34"/>
+            <path d="M200 392h34"/>
+            <path d="M280 392h34"/>
+            <path d="M360 392h34"/>
+            <path d="M440 392h34"/>
+          </g>
+          <!-- 电车 -->
+          <g>
+            <rect x="150" y="300" width="130" height="58" rx="12" fill="#c9a24a"/>
+            <rect x="164" y="312" width="34" height="26" rx="4" fill="#f7f8f5" opacity=".9"/>
+            <rect x="208" y="312" width="34" height="26" rx="4" fill="#f7f8f5" opacity=".9"/>
+            <rect x="252" y="312" width="18" height="26" rx="4" fill="#f7f8f5" opacity=".65"/>
+            <circle cx="178" cy="360" r="9" fill="#15362d"/>
+            <circle cx="252" cy="360" r="9" fill="#15362d"/>
+            <path d="M215 300v-24" stroke="#15362d" stroke-width="4" stroke-linecap="round"/>
+            <path d="M198 276h34" stroke="#15362d" stroke-width="4" stroke-linecap="round"/>
+          </g>
+          <!-- 行人 -->
+          <g fill="#15362d">
+            <circle cx="330" cy="332" r="8"/>
+            <path d="M330 342v22M330 350l-12 12M330 350l12 12M330 364l-8 16M330 364l8 16" stroke="#15362d" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <circle cx="372" cy="342" r="7"/>
+            <path d="M372 350v18M372 356l-9 10M372 356l9 10M372 368l-7 12M372 368l7 12" stroke="#15362d" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 1 领域概览 -->
+      <section class="panel" id="overview">
+        <h2><span class="no">01</span>系列概览：一条街能承载多少信息</h2>
+        <p class="sub">城市、光线、声音与人的移动，构成这一系列的基本刻度。</p>
+        <div class="overview-grid">
+          <div class="ov-item">
+            <b>城市章节</b>
+            <p>布拉格 1 区与 7 区共 18 个点位，布尔诺自由广场与什皮尔贝尔克一带 11 个，克鲁姆洛夫老城 6 个，俄斯特拉发、奥洛穆茨、卡罗维发利、比尔森合计 11 个。</p>
+          </div>
+          <div class="ov-item">
+            <b>时间切片</b>
+            <p>同一街口在 06:10、15:40、21:30 三段拍摄，光线、人流与店面开合状态差异明显，2026 年春季集中补拍。</p>
+          </div>
+          <div class="ov-item">
+            <b>声音线索</b>
+            <p>持续收录电车过弯、石子路车轮胎噪、街头手风琴三类环境声，用作片段与片段之间的过渡层。</p>
+          </div>
+          <div class="ov-item">
+            <b>器材序列</b>
+            <p>主力为 28mm 与 50mm 定焦，个别隧道与楼梯段使用 16mm 广角；夜间以手持配合 1/60 秒为主。</p>
+          </div>
+          <div class="ov-item">
+            <b>拍摄规则</b>
+            <p>不摆拍、不遮挡招牌、夜间不使用补光灯直射行人面部；涉及本地店铺内景先询问店主。</p>
+          </div>
+          <div class="ov-item">
+            <b>整理方式</b>
+            <p>每条素材标注城市、点位名、拍摄日期与天气代码，同名点位按年份建子目录，避免覆盖。</p>
+          </div>
+        </div>
+        <div class="tag-row" aria-label="领域关键词">
+          <span class="tag">伏尔塔瓦河东岸</span>
+          <span class="tag">什皮尔贝尔克城堡</span>
+          <span class="tag">查理大桥换岗</span>
+          <span class="tag gold">石子路车轮胎噪</span>
+          <span class="tag">28mm 街景构图</span>
+          <span class="tag">克鲁姆洛夫拱廊</span>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="panel" id="picks">
+        <div class="sec-head">
+          <h2><span class="no">02</span>精选镜头推荐</h2>
+          <a href="/#latest">按更新顺序看 →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img class="thumb" src="https://picsum.photos/seed/czechstreet-prague-archway/480/300" width="480" height="300" loading="lazy" alt="布拉格老城石拱廊下的清晨行人剪影">
+            <div class="body">
+              <h3>布拉格老城石拱廊 · 06:10 逆光</h3>
+              <p>晨光从拱门西侧渗入，地面上留下两段亮度不同的石板区域，行人穿过时影子先于人抵达画面右侧。</p>
+              <span class="meta">布拉格 · 2026-10-18 · 28mm</span>
+            </div>
+          </article>
+          <article class="card">
+            <img class="thumb" src="https://picsum.photos/seed/czechstreet-brno-square/480/300" width="480" height="300" loading="lazy" alt="布尔诺自由广场电车与晨市摊位">
+            <div class="body">
+              <h3>布尔诺自由广场 · 电车与晨市</h3>
+              <p>8 点前的菜市摊位还在搭棚，1 路电车从广场北缘切过，摊主的蓝色围裙与车厢漆色在画面里形成唯一的高饱和点。</p>
+              <span class="meta">布尔诺 · 2026-10-24 · 50mm</span>
+            </div>
+          </article>
+          <article class="card">
+            <img class="thumb" src="https://picsum.photos/seed/czechstreet-krumlov-steps/480/300" width="480" height="300" loading="lazy" alt="克鲁姆洛夫老城台阶与屋檐阴影">
+            <div class="body">
+              <h3>克鲁姆洛夫老城台阶 · 檐影分割</h3>
+              <p>台阶两侧屋檐高低差约 1.6 米，午后阴影把石阶切成明暗交替的横条，行人上下时形成规律性遮挡。</p>
+              <span class="meta">克鲁姆洛夫 · 2026-09-27 · 35mm</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="panel" id="latest">
+        <h2><span class="no">03</span>最新更新</h2>
+        <p class="sub">近 30 天新增与修订条目，按日期倒序。</p>
+        <ul class="zip-list">
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <a class="t" href="/#deep">克鲁姆洛夫老城台阶与拱廊路线笔记补拍</a>
+            <span class="m">新增 4 段</span>
+          </li>
+          <li>
+            <time datetime="2026-11-02">11-02</time>
+            <a class="t" href="/#latest">布尔诺什皮尔贝尔克城堡夜路分集表</a>
+            <span class="m">修订 2 条</span>
+          </li>
+          <li>
+            <time datetime="2026-10-28">10-28</time>
+            <a class="t" href="/#categories">俄斯特拉发米哈伊尔矿区外街景</a>
+            <span class="m">新增 3 段</span>
+          </li>
+          <li>
+            <time datetime="2026-10-21">10-21</time>
+            <a class="t" href="/#guide">夜间手持拍摄参数对照表更新</a>
+            <span class="m">修订 5 行</span>
+          </li>
+          <li>
+            <time datetime="2026-10-12">10-12</time>
+            <a class="t" href="/#picks">布拉格 7 区电车站台视角整理</a>
+            <span class="m">新增 6 段</span>
+          </li>
+          <li>
+            <time datetime="2026-10-09">10-09</time>
+            <a class="t" href="/#comments">观众对卡罗维发利温泉长廊音轨的反馈汇总</a>
+            <span class="m">评论整理</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="panel" id="categories">
+        <div class="sec-head">
+          <h2><span class="no">04</span>按城市与场景分类</h2>
+        </div>
+        <div class="cat-grid">
+          <a href="/#picks">布拉格老城小巷<small>18 个点位</small></a>
+          <a href="/#latest">布尔诺自由广场<small>11 个点位</small></a>
+          <a href="/#picks">克鲁姆洛夫拱廊<small>6 个点位</small></a>
+          <a href="/#latest">俄斯特拉发矿区街<small>4 个点位</small></a>
+          <a href="/#guide">奥洛穆茨上广场<small>3 个点位</small></a>
+          <a href="/#guide">卡罗维发利温泉长廊<small>2 个点位</small></a>
+          <a href="/#deep">比尔森老城酒馆街<small>2 个点位</small></a>
+          <a href="/#faq">夜间有轨电车线路<small>4 个点位</small></a>
+        </div>
+        <div class="tag-row" aria-label="场景标签">
+          <span class="tag gold">清晨逆光</span>
+          <span class="tag">雨天反光石板</span>
+          <span class="tag">电车过弯</span>
+          <span class="tag">拱廊纵深</span>
+          <span class="tag">市场收摊时段</span>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="panel deep" id="deep">
+        <h2><span class="no">05</span>深度解析：街景系列的“城市章节”是否成立</h2>
+        <p>把镜头贴近街道，很容易得到一组好看的画面；难的是让不同年份、不同城市之间的片段互相说明。</p>
+
+        <h3>判断一：同名点位的三次拍摄，差异大于城市之间的差异</h3>
+        <p>以布拉格老城拱廊点位为例，2023-05-14、2025-08-03、2026-10-18 三次拍摄的记录如下：</p>
+        <table class="data-table">
+          <caption style="text-align:left;font-size:13px;color:var(--ink-3);padding-bottom:6px;">布拉格老城拱廊点位三次拍摄对照（同一机位，28mm）</caption>
+          <thead>
+            <tr><th>拍摄日期</th><th>到达时间</th><th>天气</th><th>可见行人峰值</th><th>主要声源</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2023-05-14</td><td class="num">06:22</td><td>晴，云量 2 成</td><td class="num">约 9 人/分钟</td><td>面包房推车、鸟叫</td></tr>
+            <tr><td>2025-08-03</td><td class="num">14:05</td><td>多云转晴</td><td class="num">约 46 人/分钟</td><td>游客交谈、相机快门</td></tr>
+            <tr><td>2026-10-18</td><td class="num">06:10</td><td>晴，薄雾</td><td class="num">约 7 人/分钟</td><td>面包房推车、清洁车</td></tr>
+          </tbody>
+        </table>
+        <p>同样是清晨，2026 年那次行人更少，但清洁车出现的时点比 2023 年早了约 11 分钟，画面右下角多了机械刷盘的深色痕迹。把这三段并排观看，拱廊的“空”与“满”并不取决于年份，而取决于当天市政作业与开门时间的错位。城市章节真正有效的地方，是这些可以被核对的时间差。</p>
+
+        <div class="quote">如果一段街景只能靠配乐与滤镜区分，它就不构成章节，只是重复。</div>
+
+        <h3>判断二：克鲁姆洛夫的台阶比布拉格更适合拍“比例的落差”</h3>
+        <p>克鲁姆洛夫老城的石阶总长约 118 米，两侧屋檐高差在 1.2 至 2.4 米之间变化，行人通过时头部与檐口的关系在不同段落完全不同。2026-09-27 记录的那组画面里，台阶中段的拱形门洞高 2.9 米，与普通成年人的身高比约为 1.7:1，这个比例在布拉格老城拱廊里很难找到——后者的拱高普遍在 4 米以上。</p>
+        <p>因此，把克鲁姆洛夫归为“布拉格的缩小版”并不成立。它的价值在于把人与屋檐压在同一个紧凑视框里，而布拉格更适合表现纵深与消失点。</p>
+
+        <h3>判断三：夜间点位的信息量被高估</h3>
+        <p>俄斯特拉发米哈伊尔矿区外的夜间片段共 3 段，拍摄于 2026-10-28 21:10 至 22:40。实际观看时，画面中可辨认的元素集中在路灯、围栏与远处厂房轮廓三处，行人与车辆的出现频率低于每 5 分钟一次。这与部分观众“夜景更丰富”的印象不一致。</p>
+        <p>可以核对的依据是：同一区域白天拍摄的 4 段素材里，平均每段出现 6 辆以上车辆、2 名以上行人；夜间 3 段合计只出现 1 辆车、0 名行人。夜间片段的价值在于声音与静止的质感，而不是人物活动。把它当作叙事高潮，会削弱整个系列的节奏。</p>
+
+        <h3>判断四：收尾镜头决定一个城市章节是否完整</h3>
+        <p>布拉格章节的收尾镜头选在查理大桥东侧引桥，2026-10-19 18:47 拍摄，保安换岗前 9 分钟。这个时间点是桥面人流由密转疏的临界处：17:30 前后每分钟约 120 人通过，18:45 降至约 30 人。选择换岗前拍摄，是因为此后桥面灯光会切换为暖白，与之前所有白天素材的色温不一致。</p>
+        <p>这一点可以被反驳：暖白灯光本身也属于城市的一部分，拒绝它会让章节显得刻意。目前的处理是把暖白段落单独剪成 40 秒附片，放在章节末尾而不混入主片段。是否算“完整”，取决于观看者把城市当作背景还是当作叙述对象。</p>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="panel" id="guide">
+        <h2><span class="no">06</span>体验指南：按路线看这一系列</h2>
+        <p class="sub">从下午到夜间，四个步骤把单条街景串成可读的城市段落。</p>
+        <ol class="steps">
+          <li>
+            <b>先看时间标，不看标题</b>
+            <p>同一城市按拍摄时间排序，06:00—09:00 的片段集中在一起看，能最快分辨出店面开合、清洁作业与通勤人流的三条节奏线。</p>
+          </li>
+          <li>
+            <b>对照器材与焦距</b>
+            <p>28mm 段落看纵深，50mm 段落看人物与招牌的关系。把两者混着看，容易把构图差异误认成城市差异。</p>
+          </li>
+          <li>
+            <b>打开环境声再看一遍</b>
+            <p>电车过弯的钢轨摩擦声在布拉格 7 区最明显，布尔诺自由广场则是市场广播与鸽子扑翼。声音能帮人定位到具体街口。</p>
+          </li>
+          <li>
+            <b>夜间片段单独成组</b>
+            <p>把俄斯特拉发、卡罗维发利的夜间段落放在最后，配合 2026-10-21 更新的手持参数表，避免与白天段落连续播放造成节奏断裂。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="panel" id="faq">
+        <h2><span class="no">07</span>常见问题</h2>
+        <details class="faq">
+          <summary>布拉格老城与布拉格 7 区的街景有什么区别？</summary>
+          <div class="ans">
+            <p>老城以石拱廊、石板路与密集游客为主，画面纵深长、行人密度高；7 区靠近居民区与电车换乘站，常见通勤者、便利店与院墙，节奏更慢。两边在同一天 08:00 的行人密度差约 4 倍。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>克鲁姆洛夫拱廊适合什么时间段拍摄？</summary>
+          <div class="ans">
+            <p>午后 14:00 至 16:00 阴影分割最清晰，台阶明暗横条最规则。清晨虽然人少，但拱廊内光线均匀，反而失去那种被屋檐切开的层次。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>夜间手持拍摄需要多少快门速度？</summary>
+          <div class="ans">
+            <p>28mm 镜头在路灯照明下通常用 1/60 秒、ISO 3200 左右，行人有轻微拖影但不糊成一片。50mm 建议提升到 1/100 秒，否则电车经过时的车体会拉出长条。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>为什么系列里没有使用补光灯？</summary>
+          <div class="ans">
+            <p>补光灯会改变石板与墙面的反光比例，夜间片段之间就失去可比性。俄斯特拉发那 3 段全靠路灯与远处厂房灯光，色温差异被保留下来，作为后续对照的依据。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>布尔诺自由广场的晨市片段为什么剪得比较短？</summary>
+          <div class="ans">
+            <p>2026-10-24 那次市场搭棚只持续了约 40 分钟，摊主收棚动作快，画面里可用的完整动作段不多。保留两段共 52 秒，其余素材转为静态对照帧。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>各城市片段能不能按线路顺序连续播放？</summary>
+          <div class="ans">
+            <p>可以，但不建议一次连播超过 20 分钟。城市之间的光线与声音差异会在连续播放中被磨平，建议以单城市章节为单位，间隔几分钟再看下一座城市。</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="panel" id="comments">
+        <h2><span class="no">08</span>观众评论</h2>
+        <p class="sub">来自播放页与条目页的公开反馈，保留原话语气。</p>
+        <ul class="comment-list">
+          <li class="comment">
+            <span class="avatar" aria-hidden="true">林</span>
+            <div>
+              <div class="who"><b>林间电车</b><span>2026-11-04</span><span>布拉格老城石拱廊</span></div>
+              <p>06:10 那段逆光确实好，但清洁车入画的位置有点挡，右下角黑了一大块。</p>
+              <div class="ref">对应条目：布拉格老城石拱廊 · 06:10 逆光</div>
+            </div>
+          </li>
+          <li class="comment">
+            <span class="avatar" aria-hidden="true">周</span>
+            <div>
+              <div class="who"><b>周绪安</b><span>2026-11-03</span><span>布尔诺自由广场</span></div>
+              <p>自由广场那段的菜市广播很清楚，比画面更快让人知道自己在哪个城市。希望后面能补一段收摊后的空场。</p>
+              <div class="ref">对应条目：布尔诺自由广场 · 电车与晨市</div>
+            </div>
+          </li>
+          <li class="comment">
+            <span class="avatar" aria-hidden="true">M</span>
+            <div>
+              <div class="who"><b>Marek_H</b><span>2026-10-30</span><span>克鲁姆洛夫台阶</span></div>
+              <p>台阶那组阴影分割拍得很规整，但看久了有点像建筑测绘，路人的表情被压掉了。也许该放宽一点视角。</p>
+              <div class="ref">对应条目：克鲁姆洛夫老城台阶 · 檐影分割</div>
+            </div>
+          </li>
+          <li class="comment">
+            <span class="avatar" aria-hidden="true">许</span>
+            <div>
+              <div class="who"><b>许禾</b><span>2026-10-27</span></div>
+              <p>整体看下来最舒服的是声音处理，电车和石子路的胎噪没有被过度降噪。其他地方有些段落偏慢，可以剪短。</p>
+              <div class="ref">针对环境声轨的整体反馈</div>
+            </div>
+          </li>
+          <li class="comment">
+            <span class="avatar" aria-hidden="true">沉</span>
+            <div>
+              <div class="who"><b>沉舟侧畔</b><span>2026-10-25</span><span>俄斯特拉发矿区</span></div>
+              <p>矿区夜路那段实话讲有点空，十分钟里没什么发生。深夜里厂房的轮廓好看，但作为片段偏单薄，不如并进白天素材。</p>
+              <div class="ref">对应条目：俄斯特拉发米哈伊尔矿区夜路</div>
+            </div>
+          </li>
+          <li class="comment">
+            <span class="avatar" aria-hidden="true">K</span>
+            <div>
+              <div class="who"><b>Katerina_B</b><span>2026-10-22</span></div>
+              <p>按城市分章节这个思路清楚多了。以前混着看，总觉得每段都差不多，现在能记住布尔诺的电车和布拉格的拱廊。</p>
+              <div class="ref">针对城市章节结构的反馈</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="panel" id="news">
+        <h2><span class="no">09</span>相关资讯</h2>
+        <div class="news-grid">
+          <article class="news-item">
+            <time datetime="2026-11-05">2026-11-05</time>
+            <b>布拉格 7 区电车站台 11 月检修</b>
+            <p>运营方公布 11 月 9 日起夜间 22:30 后部分班次改线，原站点台位置的素材补拍计划顺延至 11 月中旬。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-11-01">2026-11-01</time>
+            <b>布尔诺自由广场冬季市集摊位图公布</b>
+            <p>市集管理方发布的摊位排布显示北缘新增 6 个木屋，去年同位置的空旷通道将被遮挡，影响原有构图。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-10-26">2026-10-26</time>
+            <b>克鲁姆洛夫老城部分石板路段封闭修缮</b>
+            <p>封闭范围涉及台阶中段约 14 米，工期至 11 月 20 日。修缮期间原有明暗分割线会被临时围栏切断。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-10-20">2026-10-20</time>
+            <b>俄斯特拉发矿区外路灯换成暖白光源</b>
+            <p>厂区外道路 10 月 18 日完成灯具更换，色温由 4000K 调至 3000K，已拍夜路素材的色偏成为对照样本。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="panel" id="recommend">
+        <h2><span class="no">10</span>相关推荐</h2>
+        <div class="rec-tags">
+          <a href="/#picks">布拉格老城小巷拍摄点位</a>
+          <a href="/#latest">布尔诺自由广场晨市分集表</a>
+          <a href="/#deep">克鲁姆洛夫台阶明暗分割对照</a>
+          <a href="/#guide">夜间手持拍摄参数表</a>
+          <a href="/#categories">俄斯特拉发矿区街景</a>
+          <a href="/#faq">查理大桥换岗人流时点</a>
+          <a href="/#comments">电车环境声收录方法</a>
+          <a href="/#guide">卡罗维发利温泉长廊音轨</a>
+        </div>
+      </section>
+
+      <!-- 11 榜单 -->
+      <section class="panel" id="rank">
+        <h2><span class="no">11</span>观看次数榜（截至 2026-11-07）</h2>
+        <ol class="rank-list">
+          <li><span class="rl-t"><a href="/#picks">布拉格老城石拱廊 · 06:10 逆光</a></span><span class="rl-n">播放 4.2 万次</span></li>
+          <li><span class="rl-t"><a href="/#latest">布尔诺自由广场 · 电车与晨市</a></span><span class="rl-n">播放 3.6 万次</span></li>
+          <li><span class="rl-t"><a href="/#deep">克鲁姆洛夫老城台阶 · 檐影分割</a></span><span class="rl-n">播放 2.9 万次</span></li>
+          <li><span class="rl-t"><a href="/#guide">布拉格 7 区电车站台 · 晚间换乘</a></span><span class="rl-n">播放 2.4 万次</span></li>
+          <li><span class="rl-t"><a href="/#comments">俄斯特拉发米哈伊尔矿区夜路</a></span><span class="rl-n">播放 1.8 万次</span></li>
+        </ol>
+      </section>
+
+      <!-- 12 创作者证言 + 时间线 -->
+      <section class="panel" id="voices">
+        <h2><span class="no">12</span>拍摄者手记与时间线</h2>
+        <div class="voices">
+          <div class="voice">
+            <p>“石子路看起来安静，其实每隔几分钟就有一辆送货车，等它们过去，街道才真正属于走路的人。”</p>
+            <span>—— 2026-10-19 布拉格，拍摄手记第 14 条</span>
+          </div>
+          <div class="voice">
+            <p>“灯光换成暖白之后，夜里厂房的轮廓变柔和了，但原来那种冷硬感没了。两种都留着，不做取舍。”</p>
+            <span>—— 2026-10-29 俄斯特拉发，拍摄手记第 21 条</span>
+          </div>
+        </div>
+        <h3 style="margin-top:var(--space-4);">系列时间线</h3>
+        <ul class="timeline">
+          <li>
+            <time datetime="2019-04-12">2019-04-12</time>
+            <b>布拉格老城首组素材</b>
+            <p>以查理大桥东侧引桥为起点，建立第一套点位编号规则，共 6 个点位。</p>
+          </li>
+          <li>
+            <time datetime="2023-05-14">2023-05-14</time>
+            <b>布拉格拱廊点位首次清晨拍摄</b>
+            <p>06:22 记录下面包房推车与鸟叫，成为后续清晨段落的比较基准。</p>
+          </li>
+          <li>
+            <time datetime="2025-08-03">2025-08-03</time>
+            <b>同一拱廊点位午后补拍</b>
+            <p>14:05 行人密度约为清晨的 5 倍，开始区分“空”与“满”两类片段。</p>
+          </li>
+          <li>
+            <time datetime="2026-09-27">2026-09-27</time>
+            <b>克鲁姆洛夫台阶段落完成</b>
+            <p>台阶两侧高差测量与分段编号，补齐 6 个点位。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-28">2026-10-28</time>
+            <b>俄斯特拉发矿区夜路补拍</b>
+            <p>路灯换色前最后一批冷光素材，共 3 段，作为色温对照。</p>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏导航与提示">
+      <div class="side-card">
+        <h3>栏目导航</h3>
+        <ul class="side-nav">
+          <li><a href="/#overview">系列概览</a></li>
+          <li><a href="/#picks">精选镜头</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#categories">城市分类</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">观看榜</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>近期必看</h3>
+        <p style="font-size:14px;color:var(--ink-2);margin:0 0 8px;">克鲁姆洛夫老城台阶的檐影分割，是这一季最容易被单独引用的画面。</p>
+        <a class="btn solid" href="/#deep" style="font-size:14px;padding:6px 14px;">读解析</a>
+      </div>
+      <div class="side-card">
+        <h3>便捷入口</h3>
+        <ul class="side-nav">
+          <li><a href="/#guide">夜间参数对照表</a></li>
+          <li><a href="/#faq">补光灯为什么不用</a></li>
+          <li><a href="/#news">路况与修缮通知</a></li>
+          <li><a href="/#recommend">相关推荐标签</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">
+          <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="双拱门与街道标志">
+            <rect width="48" height="48" rx="10" fill="#c9a24a"/>
+            <path d="M10 38V20l7 6 7-10 7 10 7-6v18" fill="none" stroke="#15362d" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="24" cy="34" r="2.6" fill="#15362d"/>
+          </svg>
+          <span>
+            <span class="name">捷克街头系列全集</span>
+            <span class="sub">CZECH STREET · FULL COLLECTION</span>
+          </span>
+        </div>
+        <p>把街口的时间差、声音与光线拆开记录，让不同城市之间的差异可以被对照、被质疑。</p>
+      </div>
+      <div>
+        <h4>城市章节</h4>
+        <ul>
+          <li><a href="/#picks">布拉格老城</a></li>
+          <li><a href="/#latest">布尔诺自由广场</a></li>
+          <li><a href="/#deep">克鲁姆洛夫台阶</a></li>
+          <li><a href="/#categories">俄斯特拉发矿区</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读与观看</h4>
+        <ul>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">观看榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li>条目、播放量、拍摄时间为示例数据</li>
+          <li>评论为公开反馈整理</li>
+          <li>内容更新：2026-11-07</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 捷克街头系列全集 · 内容整理示例站点</span>
+      <span>页面内日期、数据与条目均为示例，不作为事实依据</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  // 移动端菜单
+  var toggle = document.getElementById('navToggle');
+  var navList = document.getElementById('primary-nav');
+  if(toggle && navList){
+    toggle.addEventListener('click', function(){
+      var open = navList.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? '收起菜单' : '栏目菜单';
+    });
+    navList.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.textContent = '栏目菜单';
+      }
+    });
+  }
+
+  // 本地搜索
+  var input = document.getElementById('siteSearch');
+  var result = document.getElementById('searchResult');
+  var index = [
+    {t:'布拉格老城石拱廊 · 06:10 逆光', h:'/#picks'},
+    {t:'布尔诺自由广场 · 电车与晨市', h:'/#latest'},
+    {t:'克鲁姆洛夫老城台阶 · 檐影分割', h:'/#deep'},
+    {t:'布拉格 7 区电车站台 · 晚间换乘', h:'/#categories'},
+    {t:'俄斯特拉发米哈伊尔矿区街景', h:'/#categories'},
+    {t:'奥洛穆茨上广场', h:'/#guide'},
+    {t:'卡罗维发利温泉长廊', h:'/#guide'},
+    {t:'比尔森老城酒馆街', h:'/#deep'},
+    {t:'夜间手持拍摄参数对照表', h:'/#guide'},
+    {t:'补光灯为什么不用', h:'/#faq'},
+    {t:'查理大桥换岗人流时点', h:'/#faq'},
+    {t:'石子路车轮胎噪', h:'/#overview'},
+    {t:'28mm 街景构图', h:'/#overview'},
+    {t:'克鲁姆洛夫拱廊', h:'/#picks'},
+    {t:'观看次数榜', h:'/#rank'},
+    {t:'系列时间线', h:'/#voices'}
+  ];
+  function render(q){
+    if(!result) return;
+    var key = q.trim().toLowerCase();
+    if(!key){ result.classList.remove('show'); result.innerHTML=''; return; }
+    var hits = index.filter(function(item){
+      return item.t.toLowerCase().indexOf(key) !== -1;
+    }).slice(0,8);
+    if(hits.length === 0){
+      result.innerHTML = '<div class="none">没有找到匹配的条目。试试“布拉格”“布尔诺”“夜间”“参数”。</div>';
+    }else{
+      result.innerHTML = '<ul>' + hits.map(function(item){
+        return '<li><a href="' + item.h + '">' + item.t + '</a></li>';
+      }).join('') + '</ul>';
+    }
+    result.classList.add('show');
+  }
+  if(input){
+    input.addEventListener('input', function(){ render(input.value); });
+    input.addEventListener('focus', function(){ if(input.value.trim()) render(input.value); });
+    document.addEventListener('click', function(e){
+      if(result && !result.contains(e.target) && e.target !== input){
+        result.classList.remove('show');
+      }
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ result.classList.remove('show'); input.blur(); }
+      if(e.key === 'Enter'){
+        var first = result.querySelector('a');
+        if(first){ window.location.href = first.getAttribute('href'); }
+      }
+    });
+  }
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(!toTop) return;
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+    // 侧栏高亮
+    var secs = document.querySelectorAll('main section[id]');
+    var links = document.querySelectorAll('.side-nav a');
+    var pos = window.scrollY + 130;
+    var current = '';
+    secs.forEach(function(s){
+      if(s.offsetTop <= pos) current = s.id;
+    });
+    links.forEach(function(a){
+      var target = a.getAttribute('href').replace('/#','');
+      a.classList.toggle('active', target === current);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  // 平滑滚动预留吸顶高度（对不支持 scroll-margin 的浏览器兜底）
+  document.querySelectorAll('a[href^="/#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href').replace('/#','');
+      var target = document.getElementById(id);
+      if(!target) return;
+      e.preventDefault();
+      var offset = 110;
+      var top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({top: top, behavior:'smooth'});
+      history.replaceState(null,'', '/#' + id);
+    });
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"捷克街头系列全集",
+  "description":"按城市与年份整理的捷克街头影像作品合集，覆盖布拉格、布尔诺、克鲁姆洛夫等 7 座城市。",
+  "inLanguage":"zh-CN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"布拉格老城与布拉格 7 区的街景有什么区别？",
+      "acceptedAnswer":{"@type":"Answer","text":"老城以石拱廊、石板路与密集游客为主，画面纵深长、行人密度高；7 区靠近居民区与电车换乘站，常见通勤者、便利店与院墙，节奏更慢。"}
+    },
+    {
+      "@type":"Question",
+      "name":"克鲁姆洛夫拱廊适合什么时间段拍摄？",
+      "acceptedAnswer":{"@type":"Answer","text":"午后 14:00 至 16:00 阴影分割最清晰，台阶明暗横条最规则。清晨虽然人少，但拱廊内光线均匀，反而失去被屋檐切开的层次。"}
+    },
+    {
+      "@type":"Question",
+      "name":"夜间手持拍摄需要多少快门速度？",
+      "acceptedAnswer":{"@type":"Answer","text":"28mm 镜头在路灯照明下通常用 1/60 秒、ISO 3200 左右，行人有轻微拖影但不糊成一片。50mm 建议提升到 1/100 秒。"}
+    },
+    {
+      "@type":"Question",
+      "name":"为什么系列里没有使用补光灯？",
+      "acceptedAnswer":{"@type":"Answer","text":"补光灯会改变石板与墙面的反光比例，夜间片段之间就失去可比性。俄斯特拉发那 3 段全靠路灯与远处厂房灯光，色温差异被保留下来。"}
+    },
+    {
+      "@type":"Question",
+      "name":"布尔诺自由广场的晨市片段为什么剪得比较短？",
+      "acceptedAnswer":{"@type":"Answer","text":"2026-10-24 那次市场搭棚只持续了约 40 分钟，摊主收棚动作快，画面里可用的完整动作段不多。"}
+    },
+    {
+      "@type":"Question",
+      "name":"各城市片段能不能按线路顺序连续播放？",
+      "acceptedAnswer":{"@type":"Answer","text":"可以，但不建议一次连播超过 20 分钟。城市之间的光线与声音差异会在连续播放中被磨平，建议以单城市章节为单位观看。"}
+    }
+  ]
+}
+</script>
+
+</body>
+              </html>
